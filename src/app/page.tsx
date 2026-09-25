@@ -12,6 +12,13 @@ export default function Home() {
   const irCrear = () =>{
     router.replace("/crear");
   };
+  const irPelicular = () =>{
+    router.replace("/movies");
+  };
+
+    const irPremios = () =>{
+    router.replace("/prizes");
+  };
 
 
   return (
@@ -32,6 +39,20 @@ export default function Home() {
             className="rounded-lg bg-green-600 px-4 py-2 text-white hover:bg-green-700"
           >
             Crear Actor
+          </button>
+
+          <button
+            onClick={irPelicular}
+            className="rounded-lg bg-green-600 px-4 py-2 text-white hover:bg-green-700"
+          >
+            Ver Pelicula
+          </button>
+
+          <button
+            onClick={irPremios}
+            className="rounded-lg bg-green-600 px-4 py-2 text-white hover:bg-green-700"
+          >
+            Ver premios
           </button>
         </div>
       </main>

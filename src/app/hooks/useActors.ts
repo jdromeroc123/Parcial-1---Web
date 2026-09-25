@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import { Movie } from '../hooks/useMovies';
 
 export interface Actor {
   id: string;
@@ -9,6 +10,7 @@ export interface Actor {
   nationality: string;
   birthDate: string;
   biography: string;
+  movies?: Movie[];
 }
 
 export type CreateActorInput = Omit<Actor, "id">;
